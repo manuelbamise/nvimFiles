@@ -24,12 +24,13 @@ local map = vim.keymap.set
 
 -- Define the buffer group in which-key
 wk.add({
-	{ "<leader>b", group = "Buffers" },
-	{ "<leader>bn", desc = "Next buffer" },
-	{ "<leader>bp", desc = "Previous buffer" },
-	{ "<leader>bb", desc = "Pick buffer" },
-	{ "<leader>bd", desc = "Delete buffer" },
-	{ "<leader>bl", desc = "List buffers" },
+	{ "<leader>p", group = "MiniPick Keymaps" },
+	{ "<leader>b", group = "Buffer Keymaps " },
+	{ "<leader>pb", desc = "Buffer " },
+	{ "<leader>pg", desc = "Grep" },
+	{ "<leader>pgl", desc = "Grep Live" },
+	{ "<leader>ph", desc = "Help" },
+	{ "<leader>pf", desc = "Files" },
 	{
 		mode = { "n" },
 	},
@@ -38,6 +39,11 @@ wk.add({
 -- The actual keymaps (needed for which-key to trigger)
 map("n", "<leader>bn", "<cmd>bnext<cr>", { desc = "Next buffer" })
 map("n", "<leader>bp", "<cmd>bprevious<cr>", { desc = "Previous buffer" })
-map("n", "<leader>bb", "<cmd>Pick buffers<cr>", { desc = "Pick buffer" })
-map("n", "<leader>bd", "<cmd>bdelete<cr>", { desc = "Delete buffer" })
-map("n", "<leader>bl", "<cmd>ls<cr>", { desc = "List buffers" })
+map("n", "<leader>bd", "<cmd>wq<cr>", { desc = "Delete buffer" })
+map("n", "<leader>bl", "<cmd>Pick buffers<cr>", { desc = "List buffers" })
+
+map("n", "<leader>pb", "<cmd>Pick buffers<cr>", { desc = "List buffers" })
+map("n", "<leader>pf", "<cmd>Pick files<cr>", { desc = "List files" })
+map("n", "<leader>pg", "<cmd>Pick grep<cr>", { desc = "grep" })
+map("n", "<leader>pgl", "<cmd>Pick grep_live<cr>", { desc = "grep live" })
+map("n", "<leader>ph", "<cmd>Pick help<cr>", { desc = "help" })
