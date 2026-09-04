@@ -25,6 +25,6 @@ vim.cmd.colorscheme("oxocarbon")
 vim.api.nvim_set_hl(0, "Normal", { bg = "NONE" })
 -- Optional: also clear sidebars and floats
 vim.api.nvim_set_hl(0, "NormalNC", { bg = "NONE" })
-vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" })
+-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" })
 vim.api.nvim_set_hl(0, "LineNr", { bg = "NONE" })
 vim.api.nvim_set_hl(0, "CursorLineNr", { bg = "NONE" })
