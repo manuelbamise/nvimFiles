@@ -1,30 +1,29 @@
 return {
-  'neovim/nvim-lspconfig',
-  dependencies = { 'saghen/blink.cmp', 'williamboman/mason.nvim', 'williamboman/mason-lspconfig.nvim' },
+	"neovim/nvim-lspconfig",
+	dependencies = { "saghen/blink.cmp", "williamboman/mason.nvim", "williamboman/mason-lspconfig.nvim" },
 
-  -- example using `opts` for defining servers
-  -- opts = {
-  --   servers = {
-  --     lua_ls = {}
-  --   }
-  -- },
-  -- config = function(_, opts)
-  --   local lspconfig = require('lspconfig')
-  --   for server, config in pairs(opts.servers) do
-  --     -- passing config.capabilities to blink.cmp merges with the capabilities in your
-  --     -- `opts[server].capabilities, if you've defined it
-  --     config.capabilities = require('blink.cmp').get_lsp_capabilities(config.capabilities)
-  --     lspconfig[server].setup(config)
-  --   end
-  -- end
-  --
- -- example calling setup directly for each LSP
-  config = function()
-    vim.lsp.config('lua_ls',{
-      capabilities = require('blink.cmp').get_lsp_capabilities(),
-    })
+	-- example using `opts` for defining servers
+	-- opts = {
+	--   servers = {
+	--     lua_ls = {}
+	--   }
+	-- },
+	-- config = function(_, opts)
+	--   local lspconfig = require('lspconfig')
+	--   for server, config in pairs(opts.servers) do
+	--     -- passing config.capabilities to blink.cmp merges with the capabilities in your
+	--     -- `opts[server].capabilities, if you've defined it
+	--     config.capabilities = require('blink.cmp').get_lsp_capabilities(config.capabilities)
+	--     lspconfig[server].setup(config)
+	--   end
+	-- end
+	--
+	-- example calling setup directly for each LSP
+	config = function()
+		vim.lsp.config("lua_ls", {
+			capabilities = require("blink.cmp").get_lsp_capabilities(),
+		})
 
-    vim.lsp.enable('lua_ls')
-  end,
+		vim.lsp.enable("lua_ls")
+	end,
 }
-
