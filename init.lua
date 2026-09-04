@@ -1,12 +1,6 @@
 require("config.lazy")
 require("keymaps")
 
--- set background to terminal
-vim.api.nvim_set_hl(0, "Normal", { bg = "NONE" })
--- Optional: also clear sidebars and floats
-vim.api.nvim_set_hl(0, "NormalNC", { bg = "NONE" })
-vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" })
-
 -- set the number of spaces a tab inputs in insert mode
 vim.opt.expandtab = true
 vim.opt.softtabstop = 2
@@ -24,3 +18,13 @@ vim.cmd("filetype plugin indent on")
 -- vim.keymap.set('n','K',vim.lsp.buf.hover)
 
 -- vim.lsp.enable("lua_ls")
+vim.opt.background = "dark"
+vim.cmd.colorscheme("oxocarbon")
+
+-- -- set background to terminal
+vim.api.nvim_set_hl(0, "Normal", { bg = "NONE" })
+-- Optional: also clear sidebars and floats
+vim.api.nvim_set_hl(0, "NormalNC", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "LineNr", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "CursorLineNr", { bg = "NONE" })
