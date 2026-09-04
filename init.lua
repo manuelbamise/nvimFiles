@@ -23,10 +23,10 @@ vim.opt.smartindent = true
 vim.cmd("filetype plugin indent on")
 
 
+
 -- vim.opt.lineheight = 2
 
 -- :checkhealth vim.lsp (to check the status of the installed LSPs)
-
 
 
 
