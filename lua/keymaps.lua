@@ -39,7 +39,7 @@ wk.add({
 -- The actual keymaps (needed for which-key to trigger)
 map("n", "<leader>bn", "<cmd>bnext<cr>", { desc = "Next buffer" })
 map("n", "<leader>bp", "<cmd>bprevious<cr>", { desc = "Previous buffer" })
-map("n", "<leader>bd", "<cmd>wq<cr>", { desc = "Delete buffer" })
+map("n", "<leader>bd", "<cmd>bd<cr>", { desc = "Delete buffer" })
 map("n", "<leader>bl", "<cmd>Pick buffers<cr>", { desc = "List buffers" })
 
 map("n", "<leader>pb", "<cmd>Pick buffers<cr>", { desc = "List buffers" })
