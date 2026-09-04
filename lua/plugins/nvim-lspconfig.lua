@@ -20,12 +20,11 @@ return {
   --
  -- example calling setup directly for each LSP
   config = function()
-    vim.lsp.config('*',{
+    vim.lsp.config('lua_ls',{
       capabilities = require('blink.cmp').get_lsp_capabilities(),
     })
 
     vim.lsp.enable('lua_ls')
-  end
+  end,
 }
-
 
