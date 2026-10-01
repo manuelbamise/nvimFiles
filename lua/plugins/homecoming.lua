@@ -19,12 +19,12 @@ return {
 				items = {
 
 					{
-						action = "Telescope find_files",
+						action = "Pick files",
 						label = "Find files",
 						section = sections.files,
 					},
 					{
-						action = "Telescope live_grep",
+						action = "Pick grep_live",
 						label = "Live grep",
 						section = sections.files,
 					},

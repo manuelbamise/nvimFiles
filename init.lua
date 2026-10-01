@@ -14,6 +14,7 @@ vim.cmd("filetype plugin indent on")
 -- vim.opt.lineheight = 2
 
 -- :checkhealth vim.lsp (to check the status of the installed LSPs)
+--
 
 -- vim.keymap.set('n','K',vim.lsp.buf.hover)
 
@@ -28,3 +29,7 @@ vim.api.nvim_set_hl(0, "NormalNC", { bg = "NONE" })
 -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" })
 vim.api.nvim_set_hl(0, "LineNr", { bg = "NONE" })
 vim.api.nvim_set_hl(0, "CursorLineNr", { bg = "NONE" })
+
+-- setting the path for golang
+vim.env.PATH = vim.env.PATH .. ":/usr/local/go/bin"
+vim.env.PATH = vim.env.PATH .. ":/home/manuelbamise/.config/nvm/versions/node/v22.15.0/bin"
