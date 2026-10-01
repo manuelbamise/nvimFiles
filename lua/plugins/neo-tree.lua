@@ -205,8 +205,8 @@ return {
 			filesystem = {
 				filtered_items = {
 					visible = false,
-					hide_dotfiles = true,
-					hide_gitignored = true,
+					hide_dotfiles = false,
+					hide_gitignored = false,
 					hide_ignored = true,
 					ignore_files = {
 						".neotreeignore",
@@ -217,7 +217,7 @@ return {
 					hide_by_pattern = {},
 					always_show = {},
 					always_show_by_pattern = {},
-					never_show = {},
+					never_show = { ".git" },
 					never_show_by_pattern = {},
 				},
 				follow_current_file = {
