@@ -47,3 +47,33 @@ map("n", "<leader>pf", "<cmd>Pick files<cr>", { desc = "List files" })
 map("n", "<leader>pg", "<cmd>Pick grep<cr>", { desc = "grep" })
 map("n", "<leader>pgl", "<cmd>Pick grep_live<cr>", { desc = "grep live" })
 map("n", "<leader>ph", "<cmd>Pick help<cr>", { desc = "help" })
+
+-- Split commands
+-- Split creation
+map("n", "<leader>sv", "<Cmd>vsplit<CR>", { desc = "Split vertically" })
+map("n", "<leader>sh", "<Cmd>split<CR>", { desc = "Split horizontally" })
+map("n", "<leader>sn", "<Cmd>vnew<CR>", { desc = "New vertical split" })
+map("n", "<leader>sN", "<Cmd>new<CR>", { desc = "New horizontal split" })
+
+-- Split navigation (using Ctrl + hjkl, or your preferred keys)
+map("n", "<C-h>", "<C-w>h", { desc = "Move to left split" })
+map("n", "<C-j>", "<C-w>j", { desc = "Move to lower split" })
+map("n", "<C-k>", "<C-w>k", { desc = "Move to upper split" })
+map("n", "<C-l>", "<C-w>l", { desc = "Move to right split" })
+
+-- Split resizing
+--map("n", "<C-Up>",    "<Cmd>resize +2<CR>",          { desc = "Increase height" })
+--map("n", "<C-Down>",  "<Cmd>resize -2<CR>",          { desc = "Decrease height" })
+--map("n", "<C-Left>",  "<Cmd>vertical resize -2<CR>", { desc = "Decrease width" })
+--map("n", "<C-Right>", "<Cmd>vertical resize +2<CR>", { desc = "Increase width" })
+
+-- Split management
+map("n", "<leader>sc", "<C-w>c", { desc = "Close split" })
+map("n", "<leader>so", "<C-w>o", { desc = "Close other splits" })
+map("n", "<leader>s=", "<C-w>=", { desc = "Equalize splits" })
+
+-- Move splits around
+map("n", "<leader>sH", "<C-w>H", { desc = "Move split left" })
+map("n", "<leader>sJ", "<C-w>J", { desc = "Move split down" })
+map("n", "<leader>sK", "<C-w>K", { desc = "Move split up" })
+map("n", "<leader>sL", "<C-w>L", { desc = "Move split right" })

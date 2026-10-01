@@ -14,6 +14,7 @@ vim.cmd("filetype plugin indent on")
 -- vim.opt.lineheight = 2
 
 -- :checkhealth vim.lsp (to check the status of the installed LSPs)
+
 --
 
 -- vim.keymap.set('n','K',vim.lsp.buf.hover)
@@ -40,3 +41,11 @@ vim.g.loaded_netrwPlugin = 1
 
 -- optionally enable 24-bit colour
 vim.opt.termguicolors = true
+
+vim.api.nvim_create_autocmd("InsertEnter", {
+	callback = function()
+		vim.schedule(function()
+			vim.cmd("nohlsearch")
+		end)
+	end,
+})
