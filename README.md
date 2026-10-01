@@ -18,12 +18,13 @@ A personal Neovim configuration with a **retro / hacker terminal aesthetic** —
 - **Simple, readable structure** — plugin specs split into `lua/` modules, managed with lazy.nvim.
 
 ## 📁 Structure
+```
 .
 ├── init.lua # Entry point
 ├── lazy-lock.json # Plugin version lockfile
 └── lua/ # Config modules & plugin specs
+```
 
-text
 
 ## 🚀 Installation
 
