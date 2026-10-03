@@ -9,6 +9,8 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
+vim.o.winborder = "single"
+
 vim.cmd("filetype plugin indent on")
 
 -- vim.opt.lineheight = 2
@@ -27,7 +29,7 @@ vim.cmd.colorscheme("oxocarbon")
 vim.api.nvim_set_hl(0, "Normal", { bg = "NONE" })
 -- Optional: also clear sidebars and floats
 vim.api.nvim_set_hl(0, "NormalNC", { bg = "NONE" })
--- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" })
 vim.api.nvim_set_hl(0, "LineNr", { bg = "NONE" })
 vim.api.nvim_set_hl(0, "CursorLineNr", { bg = "NONE" })
 
